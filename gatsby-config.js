@@ -26,14 +26,14 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/pages/blog/`,
+        path: `${__dirname}/src/pages/blog/images`,
       },
     },
   {
      resolve: `gatsby-plugin-mdx`,
       options: {
         defaultLayouts: {
-          posts: require.resolve("./src/components/blog-post-layout.js"),
+          //posts: require.resolve("./src/components/blog-post-layout.js"),
           default: require.resolve(`./src/components/layout.js`),
       },
     },
